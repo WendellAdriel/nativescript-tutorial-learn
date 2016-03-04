@@ -8,8 +8,8 @@
   </page.actionBar>
 
   <grid-layout rows="auto, *" columns="2*, *">
-    <text-field id="grocery" text="{{ grocery }}" hint="Enter a grocery item" row="0" column="0"/>
-    <button text="+ Add" tap="add" row="0" column="1"/>
+    <text-field id="grocery" text="{{ grocery }}" hint="Enter a grocery item" row="0" col="0"/>
+    <button text="Add" tap="add" row="0" col="1"/>
 
     <list-view id="groceryList" items="{{ groceryList }}" row="1" colSpan="2">
       <ListView.itemTemplate>
