@@ -1,0 +1,25 @@
+<page loaded="loaded">
+  <page.actionBar>
+    <action-bar title="Groceries">
+      <actionBar.actionItems>
+        <action-item text="Share" tap="share" ios.position="right"/>
+      </actionBar.actionItems>
+    </action-bar>
+  </page.actionBar>
+
+  <grid-layout rows="auto, *" columns="2*, *">
+    <text-field id="grocery" text="{{ grocery }}" hint="Enter a grocery item" row="0" column="0"/>
+    <button text="+ Add" tap="add" row="0" column="1"/>
+
+    <list-view id="groceryList" items="{{ groceryList }}" row="1" colSpan="2">
+      <ListView.itemTemplate>
+        <grid-layout columns="*, auto">
+          <label text="{{ name }}"/>
+          <image src="res://ic_menu_delete" ios:visibility="collapsed" col="1" tap="delete"/>
+        </grid-layout>
+      </ListView.itemTemplate>
+    </list-view>
+
+    <activity-indicator busy="{{ isLoading }}" rowSpan="2" colSpan="2"/>
+  </grid-layout>
+</page>

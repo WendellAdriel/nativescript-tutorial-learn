@@ -1,0 +1,17 @@
+list-view {
+  margin: 5;
+  opacity: 0;
+}
+label {
+  margin: 10;
+  horizontal-align: left;
+  vertical-align: center;
+}
+text-field {
+  border-width: 5;
+  border-style: solid;
+  border-color: #034793;
+}
+image {
+  margin: 10;
+}

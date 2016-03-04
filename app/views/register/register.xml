@@ -1,0 +1,14 @@
+<page loaded="loaded">
+  <page.actionBar>
+    <action-bar title="Sign up"></action-bar>
+  </page.actionBar>
+
+  <stack-layout orientation="vertical">
+    <image src="res://logo" stretch="none" horizontalAlignment="center"/>
+
+    <text-field text="{{ email }}" id="email" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none"/>
+    <text-field text="{{ password }}" secure="true" hint="Password"/>
+
+    <button text="Sign Up" tap="register"/>
+  </stack-layout>
+</page>

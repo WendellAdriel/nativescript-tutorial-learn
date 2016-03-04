@@ -1,0 +1,27 @@
+@import { url('~/platform.css') };
+
+page {
+  background-color: #ddd;
+  font-size: 17;
+}
+button {
+  background-color: #00c853;
+  color: #fff;
+  font-weight: bolder;
+}
+image {
+  margin: 20 0 80 0;
+}
+action-bar {
+  color: white;
+  background-color: #2E6DAD;
+}
+.separate {
+  margin: 5;
+  padding: 10;
+}
+.title-img {
+  height: 40;
+  width: 40;
+  vertical-align: center;
+}

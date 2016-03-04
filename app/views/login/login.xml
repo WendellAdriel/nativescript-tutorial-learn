@@ -1,0 +1,15 @@
+<page loaded="loaded">
+  <page.actionBar>
+    <action-bar title="Sign in"></action-bar>
+  </page.actionBar>
+
+  <stack-layout orientation="vertical">
+    <image src="res://logo" stretch="none" horizontalAlignment="center"/>
+
+    <text-field id="email" text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none" class="separate"/>
+    <text-field text="{{ password }}" hint="Password" secure="true" class="separate"/>
+
+    <button text="Sign in" class="separate" tap="signIn"/>
+    <button text="Sign up for Groceries" class="link separate" tap="register"/>
+  </stack-layout>
+</page>
